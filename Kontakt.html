@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Kontakt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="MyLayout.css">
+
+</head>
+
+<script>
+  function czas() {
+    if (!document.write)
+
+      var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
+    dzisiaj = new Date();
+    godzina=dzisiaj.getHours();
+    minuty=dzisiaj.getMinutes();
+    sekundy=dzisiaj.getSeconds();
+    rok=dzisiaj.getYear();
+    dzien=dzisiaj.getDate();
+    licz_dzien=dzisiaj.getDay();
+    if (licz_dzien==0) {tekst_dzien="Niedziela"}
+    if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
+    if (licz_dzien==2) {tekst_dzien="Wtorek"}
+    if (licz_dzien==3) {tekst_dzien="Środa"}
+    if (licz_dzien==4) {tekst_dzien="Czwartek"}
+    if (licz_dzien==5) {tekst_dzien="Piątek"}
+    if (licz_dzien==6) {tekst_dzien="Sobota"}
+    miesiac=dzisiaj.getMonth();
+    if (miesiac==0) {tekst_miesiac="styczeń"}
+    if (miesiac==1) {tekst_miesiac="luty"}
+    if (miesiac==2) {tekst_miesiac="marzec"}
+    if (miesiac==3) {tekst_miesiac="kwiecień"}
+    if (miesiac==4) {tekst_miesiac="maj"}
+    if (miesiac==5) {tekst_miesiac="czerwiec"}
+    if (miesiac==6) {tekst_miesiac="lipiec"}
+    if (miesiac==7) {tekst_miesiac="sierpień"}
+    if (miesiac==8) {tekst_miesiac="wrzesień"}
+    if (miesiac==9) {tekst_miesiac="październik"}
+    if (miesiac==10) {tekst_miesiac="listopad"}
+    if (miesiac==11) {tekst_miesiac="grudzień"}
+    if (dzien < 10) {dzien="0"+dzien;}
+    if (godzina < 10) {godzina="0"+godzina;}
+    if (minuty < 10) {minuty="0"+minuty;}
+    if (sekundy < 10) {sekundy="0"+sekundy;}
+    pelnyczas=tekst_dzien + ",<br>" + dzien +"&nbsp;"+ tekst_miesiac+"&nbsp;"+rok+"<br>"
+            + godzina+":"+minuty+":"+sekundy;
+    if (document.layers){
+      document.layers.Data.document.write(pelnyczas)
+      document.layers.Data.document.close()
+    }
+
+    Data.innerHTML=pelnyczas
+    setTimeout("czas()",500)
+  }
+</script>
+<body onload="czas()">
+
+<header>
+  <h2>Kontakt</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li class="link_p"><a href="#">Starachowice</a></li>
+
+    </ul>
+    <span id="Data"></span>
+    
+    <h4 class="link_p"><a href="index.html"> Strona Główna </a></h4> 
+  </nav>
+  <article>
+    <h1>O autorze</h1>
+
+    <p>Michał Sendecki</p>
+    <P>ul. Leśna 16/12</P>
+    <p>27-200 Starachowice</p>
+
+    <p>e-mail: sendecki@interia.pl</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.035398174157!2d21.090638714879603!3d51.05243417956294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718143845b96413%3A0x8f091c2276bd25f8!2sLe%C5%9Bna%2016%2C%2027-200%20Starachowice!5e0!3m2!1spl!2spl!4v1671750028187!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="index1.html">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="index2.html">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#">
+    </map>
+
+  </article>

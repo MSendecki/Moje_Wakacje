@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Niemcy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="MyLayout.css">
+  <link rel="stylesheet" href="lightbox.css">
+
+</head>
+
+<body>
+
+<script>
+  function czas() {
+    if (!document.write)
+
+      var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
+    dzisiaj = new Date();
+    godzina=dzisiaj.getHours();
+    minuty=dzisiaj.getMinutes();
+    sekundy=dzisiaj.getSeconds();
+    rok=dzisiaj.getFullYear();
+    dzien=dzisiaj.getDate();
+    licz_dzien=dzisiaj.getDay();
+    if (licz_dzien==0) {tekst_dzien="Niedziela"}
+    if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
+    if (licz_dzien==2) {tekst_dzien="Wtorek"}
+    if (licz_dzien==3) {tekst_dzien="Środa"}
+    if (licz_dzien==4) {tekst_dzien="Czwartek"}
+    if (licz_dzien==5) {tekst_dzien="Piątek"}
+    if (licz_dzien==6) {tekst_dzien="Sobota"}
+    miesiac=dzisiaj.getMonth();
+    if (miesiac==0) {tekst_miesiac="styczeń"}
+    if (miesiac==1) {tekst_miesiac="luty"}
+    if (miesiac==2) {tekst_miesiac="marzec"}
+    if (miesiac==3) {tekst_miesiac="kwiecień"}
+    if (miesiac==4) {tekst_miesiac="maj"}
+    if (miesiac==5) {tekst_miesiac="czerwiec"}
+    if (miesiac==6) {tekst_miesiac="lipiec"}
+    if (miesiac==7) {tekst_miesiac="sierpień"}
+    if (miesiac==8) {tekst_miesiac="wrzesień"}
+    if (miesiac==9) {tekst_miesiac="październik"}
+    if (miesiac==10) {tekst_miesiac="listopad"}
+    if (miesiac==11) {tekst_miesiac="grudzień"}
+    if (dzien < 10) {dzien="0"+dzien;}
+    if (godzina < 10) {godzina="0"+godzina;}
+    if (minuty < 10) {minuty="0"+minuty;}
+    if (sekundy < 10) {sekundy="0"+sekundy;}
+    pelnyczas=tekst_dzien + ",<br>" + dzien +"&nbsp;"+ tekst_miesiac+"&nbsp;"+rok+"<br>"
+            + godzina+":"+minuty+":"+sekundy;
+    if (document.layers){
+      document.layers.Data.document.write(pelnyczas)
+      document.layers.Data.document.close()
+    }
+
+    Data.innerHTML=pelnyczas
+    setTimeout("czas()",500)
+  }
+</script>
+<body onload="czas()">
+
+<header>
+  <h2>Francja</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li class="link_p"><a href="#">Clermont-Ferran</a></li>
+      <li class="link_p"><a href="#">Conques</a></li>
+      <li class="link_p"><a href="#">Saint Lizier</a></li>
+      <li class="link_p"><a href="#">Avignon</a></li>
+      <li class="link_p"><a href="#">Lyon</a></li>
+    </ul>
+    <span id="Data"></span>
+
+    <h4 class="link_p"><a href="Index.html"> Strona Główna </a></h4>
+  </nav>
+  <article>
+    <h1>Francja</h1>
+    <p>Prekraczjąc granicę francuską wjechaliśmy na nieznany nam dotąd ląd, pierwszy raz samodzielnie samochodem w tym kraju.
+    Restrykcyjnie egzekwowane przepisy dotyczace prędkości - o czym miałem się dopiero przekonać, a przede wszystkim dopadająca
+    mnie choroba spowodowały, że podróż do Clermont-Ferran - miasta, w ktorym mieliśmy zaplnowany nocleg stała się prawdziwym wyzwaniem.
+    Osobiście nie mam z tego miejsca, żadnych wspomnień poza tym, że prawie cały pobyt w hotelu przespałem. Obudziłem się raz z konieczności
+      aby Na szybko znaleźć ajkiś nocleg na kolejną noc ponieważ znaomi mieszkający w Perpignac stali się nieosiągalni. Następnego dnia miało
+      okazać się, że z powodu operatora sieci.
+     Przespana noc i lepsze samopoczucie pozowliły spojrzeć na Francję z większym optymizmem. Przystanek w Conques
+    - średniowiecznym opctwie, miejscu przystankowym pielgrzymów zmierzjących do grobu Św. Jakuba nas zachwycił. Wprowadzil w dobry nastrój
+    a dojazd do Saint-Lizier był nieporównanie łatwiejszy porównująć z katuszami dnia poprzedniego. Znowu zaczynałem odczuwać satysfakcję z podróży.
+      Na miejscu okazało się, że znalazłem nocleg na terenie zamku, a sciślej mówiąc zabudowań w obrębie murów zamkowych urządzonych na apartamenty. Wieczorne zwiedzanie misteczka
+      położonego poniżej zamku, widok na bliskie Pireneje oraz samotny poranny spacer po budzącej się do życia jakby zampomnianej mieścinie
+      stały się dla mnie esencją wrażeń z tego miejsca. Nastepnego poranka ruszyliśmy w kierunku gór.</p>
+
+      
+      <b class="link_p"><a href="Andorra.html"> Przejdź do opisu Andora. </a></b>
+
+      <p>Przekraczając granicę francuską od strony hiszpańskiej mieliśmy klarowny plan. Zanim dotrzemy na nocleg do Lyonu
+      zobaczyć Avignon. Wychodziło nam, że przy skorzystaniu z autostrad powinniśmy mieć około 2 godzin na zapoznanie się
+      z tym słynnym miasteczkiem. Oczywiście najchętniej zatańczylibysmy na słynnym moście, który okazał się
+        tylko częścią tego, co spodziewaliśmy się zobaczyć. Most jest cześciowo zburzony, obecnie pozostały tylko 4 z pierwotnych
+        12 jego przęseł. Można na niego wejść ale wiąże się to z opłatą. My postanowilśmy spojrzeć na niego z góry
+        z wysokości ogrodów ponad pałacem piepieży. W czasie naszej wizyty w Avignon odbywał się festiwal filmowy dlatego naszej wizycie
+        towarzyszy pewien rodzaj zgiełku i poruszenia, który jest charakterystyczny dla tego typu imprez. Z pewnością tego dnia działo się
+        tu o wiele więcej niż moglibyśmy się spodziewać gdybyśmy trafili tu poza terminem festiwalu. Miasteczko zrobiiło na nas bardzo pozytywne wrażenie.
+        To tu małżonka podkreślała, że powiedzenie - "Francja elegancja" - nie jest jedynie zestawieniem dwóch rymujacych się słów. Tymczasem trzeba
+        było ruszyć w kierunku Lyonu - drugiego co do wielkości miasta we Francji. Co z niego zapamiętam? Pizzę z dziećmi, spacer z żoną w poszukiwaniu
+        stargo centrum, gapiących się muzułmanów, ogólne poruszenie i noc tak gorącą, że nie dało się spać. Podsumowując spodziewałem się
+        więcej, być może zbyt późno przyjechaliśmy? Rankiem wyskoczyliśy do pobliskiego marketu kupilismy trochę serów i bagietki ucinając sobie
+        krotką  pogawędkę z mieszkającą tu od lat Polką i ruszyliśmy w kierunku wspominanego już Weterstadt.
+
+    </p>
+    <ul class="gallery">
+      <a href="Images/IMG_16.JPG" data-lightbox="models" data-title="IMG_16">
+        <li class="thumbnail"><img src="Images/IMG_16.jpg"></li>
+    </a>
+      <a href="Images/IMG_17.JPG" data-lightbox="models" data-title="IMG_17">
+        <li class="thumbnail"><img src="Images/IMG_17.jpg"></li>
+    </a>
+      <a href="Images/IMG_18.JPG" data-lightbox="models" data-title="IMG_18">
+        <li class="thumbnail"><img src="Images/IMG_18.jpg"></li>
+    </a>
+      <a href="Images/IMG_19.JPG" data-lightbox="models" data-title="IMG_19">
+        <li class="thumbnail"><img src="Images/IMG_19.jpg"></li>
+    </a>
+      <a href="Images/IMG_20.JPG" data-lightbox="models" data-title="IMG_20">
+        <li class="thumbnail"><img src="Images/IMG_20.jpg"></li>
+    </a>
+      <a href="Images/IMG_21.JPG" data-lightbox="models" data-title="IMG_21">
+        <li class="thumbnail"><img src="Images/IMG_21.jpg"></li>
+    </a>
+    </ul>
+
+
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="index1.html">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="index2.html">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#">
+    </map>
+
+  </article>
+
+</section>
+
+<script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

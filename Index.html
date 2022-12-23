@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Moje wakacje</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="MyLayout.css">
+    <link rel="stylesheet" href="lightbox.css">
+
+</head>
+
+<script>
+  function czas() {
+    if (!document.write)
+
+      var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
+    dzisiaj = new Date();
+    godzina=dzisiaj.getHours();
+    minuty=dzisiaj.getMinutes();
+    sekundy=dzisiaj.getSeconds();
+    rok=dzisiaj.getFullYear();
+    dzien=dzisiaj.getDate();
+    licz_dzien=dzisiaj.getDay();
+    if (licz_dzien==0) {tekst_dzien="Niedziela"}
+    if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
+    if (licz_dzien==2) {tekst_dzien="Wtorek"}
+    if (licz_dzien==3) {tekst_dzien="Środa"}
+    if (licz_dzien==4) {tekst_dzien="Czwartek"}
+    if (licz_dzien==5) {tekst_dzien="Piątek"}
+    if (licz_dzien==6) {tekst_dzien="Sobota"}
+    miesiac=dzisiaj.getMonth();
+    if (miesiac==0) {tekst_miesiac="styczeń"}
+    if (miesiac==1) {tekst_miesiac="luty"}
+    if (miesiac==2) {tekst_miesiac="marzec"}
+    if (miesiac==3) {tekst_miesiac="kwiecień"}
+    if (miesiac==4) {tekst_miesiac="maj"}
+    if (miesiac==5) {tekst_miesiac="czerwiec"}
+    if (miesiac==6) {tekst_miesiac="lipiec"}
+    if (miesiac==7) {tekst_miesiac="sierpień"}
+    if (miesiac==8) {tekst_miesiac="wrzesień"}
+    if (miesiac==9) {tekst_miesiac="październik"}
+    if (miesiac==10) {tekst_miesiac="listopad"}
+    if (miesiac==11) {tekst_miesiac="grudzień"}
+    if (dzien < 10) {dzien="0"+dzien;}
+    if (godzina < 10) {godzina="0"+godzina;}
+    if (minuty < 10) {minuty="0"+minuty;}
+    if (sekundy < 10) {sekundy="0"+sekundy;}
+    pelnyczas=tekst_dzien + ",<br>" + dzien +"&nbsp;"+ tekst_miesiac+"&nbsp;"+ rok +"<br>"
+            +godzina+":"+minuty+":"+sekundy;
+    if (document.layers){
+      document.layers.Data.document.write(pelnyczas)
+      document.layers.Data.document.close()
+    }
+
+    Data.innerHTML=pelnyczas
+    setTimeout("czas()",500)
+  }
+</script>
+<body onload="czas()">
+
+<header>
+  <h2>Moje wakacje</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li class="link_p"><a href="Niemcy.html">Niemcy</a></li>
+      <li class="link_p"><a href="Francja.html">Francja</a></li>
+      <li class="link_p"><a href="Andorra.html">Andorra</a></li>
+      <li class="link_p"><a href="Hiszpania.html">Hiszpania</a></li>
+    </ul>
+    <span id="Data"></span>
+  </nav>
+  <article>
+    <h1>Moje wakacje</h1>
+    <p>Rodzinny wyjazd wakacyjny samochodem docelowo do Hiszpanii. Ze względu na ponadstandardową długość trasy
+      należało zaplanować postoje dla jedynego kierowcy. W ten sposób sam dojazd i powtrót okazał się dłuższy niż
+      pobyt na miejscu :) Nie mniej jednak całość okazała się dosyć ciekawa i różnorodna. Staraliśmy sie nie robić
+        odcinków dłuższych niż 700 km. Z tej generalnej zasady wyłączyliśmy jedynie pierwszy i końcowy odcinek podróży
+        odbywający się w 85% po autostradach. To pozwoliło nam mimo długiej podróży nie spieszyć się i dać sobie
+        możliwość zatrzymania się ciekawych miejscach, o których słyszeliśmy, czytaliśmy  lub po prostu wydały nam się
+        warte zobaczenia. Niewąpliwie kamieniami milowymi były noclegi, które chcieliśmy mieć zarezerwowane jeszcze
+        przed wyjazdem, choć i tu nie uniknęliśmy "turbulencji". Na szczęście Booking.com "daje radę", co więcej sytuacja,
+        która zmusiła nas do szukania noclegu w sieci już poza Polską uświadomiła nam, że paradoksalnie korzystniejsze
+        oferty można znaleźć na niemieckich ustwieniach strony... Potęga i brutalność internetu w jednym. W ten sposób
+        szukając noclegu "po taniości" i na szybko trafiliśmy w miejsce, które nas zaskoczyło i zauroczyło.
+    </p>
+
+      <b class="link_p"><a href="Niemcy.html"> Przejdź do opisu Niemcy. </a></b>
+
+
+      <ul class="gallery">
+        <a href="Images/IMG_1.jpg" data-lightbox="models" data-title="IMG_1">
+          <li class="thumbnail"><img src="Images/IMG_1.jpg"></li>
+        </a>
+        <a href="Images/IMG_2.jpg" data-lightbox="models" data-title="IMG_2">
+          <li class="thumbnail"><img src="Images/IMG_2.jpg"></li>
+        </a>
+        <a href="Images/IMG_3.jpg" data-lightbox="models" data-title="IMG_3">
+          <li class="thumbnail"><img src="Images/IMG_3.jpg"></li>
+        </a>
+        <a href="Images/IMG_4.jpg" data-lightbox="models" data-title="IMG_4">
+          <li class="thumbnail"><img src="Images/IMG_4.jpg"></li>
+        </a>
+        <a href="Images/IMG_5.jpg" data-lightbox="models" data-title="IMG_5">
+          <li class="thumbnail"><img src="Images/IMG_5.jpg"></li>
+        </a>
+        <a href="Images/IMG_6.jpg" data-lightbox="models" data-title="IMG_6">
+          <li class="thumbnail"><img src="Images/IMG_6.jpg"></li>
+        </a>
+        <a href="Images/IMG_7.jpg" data-lightbox="models" data-title="IMG_7">
+          <li class="thumbnail"><img src="Images/IMG_7.jpg"></li>
+        </a>
+        <a href="Images/IMG_8.jpg" data-lightbox="models" data-title="IMG_8">
+          <li class="thumbnail"><img src="Images/IMG_8.jpg"></li>
+        </a>
+        <a href="Images/IMG_9.jpg" data-lightbox="models" data-title="IMG_9">
+          <li class="thumbnail"><img src="Images/IMG_9.jpg"></li>
+        </a>
+
+      </ul>
+
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="index1.html">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="index2.html">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#">
+    </map>
+
+  </article>
+
+</section>
+
+<footer>
+  <p class="link_p2"><a href="Kontakt.html">Kontakt</a></p>
+</footer>
+
+<script src="app.js"></script>
+<script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

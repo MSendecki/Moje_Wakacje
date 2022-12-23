@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Hiszpania</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="MyLayout.css">
+  <link rel="stylesheet" href="lightbox.css">
+
+
+
+</head>
+
+<body>
+<script>
+
+  function czas() {
+    if (!document.write)
+
+      var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
+    dzisiaj = new Date();
+    godzina=dzisiaj.getHours();
+    minuty=dzisiaj.getMinutes();
+    sekundy=dzisiaj.getSeconds();
+    rok=dzisiaj.getFullYear();
+    dzien=dzisiaj.getDate();
+    licz_dzien=dzisiaj.getDay();
+    if (licz_dzien==0) {tekst_dzien="Niedziela"}
+    if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
+    if (licz_dzien==2) {tekst_dzien="Wtorek"}
+    if (licz_dzien==3) {tekst_dzien="Środa"}
+    if (licz_dzien==4) {tekst_dzien="Czwartek"}
+    if (licz_dzien==5) {tekst_dzien="Piątek"}
+    if (licz_dzien==6) {tekst_dzien="Sobota"}
+    miesiac=dzisiaj.getMonth();
+    if (miesiac==0) {tekst_miesiac="styczeń"}
+    if (miesiac==1) {tekst_miesiac="luty"}
+    if (miesiac==2) {tekst_miesiac="marzec"}
+    if (miesiac==3) {tekst_miesiac="kwiecień"}
+    if (miesiac==4) {tekst_miesiac="maj"}
+    if (miesiac==5) {tekst_miesiac="czerwiec"}
+    if (miesiac==6) {tekst_miesiac="lipiec"}
+    if (miesiac==7) {tekst_miesiac="sierpień"}
+    if (miesiac==8) {tekst_miesiac="wrzesień"}
+    if (miesiac==9) {tekst_miesiac="październik"}
+    if (miesiac==10) {tekst_miesiac="listopad"}
+    if (miesiac==11) {tekst_miesiac="grudzień"}
+    if (dzien < 10) {dzien="0"+dzien;}
+    if (godzina < 10) {godzina="0"+godzina;}
+    if (minuty < 10) {minuty="0"+minuty;}
+    if (sekundy < 10) {sekundy="0"+sekundy;}
+    pelnyczas=tekst_dzien + ",<br>" + dzien +"&nbsp;"+ tekst_miesiac+"&nbsp;"+rok+"<br>"
+            + godzina+":"+minuty+":"+sekundy;
+    if (document.layers){
+      document.layers.Data.document.write(pelnyczas)
+      document.layers.Data.document.close()
+    }
+
+    Data.innerHTML=pelnyczas
+    setTimeout("czas()",500)
+  }
+</script>
+<body onload="czas()">
+
+<header>
+  <h2>Hiszpania</h2>
+</header>
+
+
+<section>
+  <nav>
+    <ul>
+      <li class="link_p"><a href="#">Malgrad de Mar</a></li>
+      <li class="link_p"><a href="#">Barcelona</a></li>
+      <li class="link_p"><a href="#">Girona</a></li>
+    </ul>
+    <span id="Data"></span>
+
+    <h4 class="link_p"><a href="index.html"> Strona Główna </a></h4>
+  </nav>
+  <article>
+    <h1>Hiszpania</h1>
+    <p>Po kilku dniach podroży zawitaliśmy do Hiszpanii gdzie czekało na nas ciepłe morze, basen i wygodny
+      apartament z 3 sypialniami. Tydzień nad morzem minął szybko, spędzilismy dzień w Barcelonie, w ktorej
+      "dopieliśmy transfer Lewandowskiego" i przeszliśmy podczas tej wizyty jakieś 15 kilometrów. Marsz w 35 stopniowym upale dał nam się
+       we znaki, chyba nawet troszkę spłaszczył to, co to miasto ma do zaoerowania. Toteż wyjazd do Girony odebraliśmy
+      o wiele bardzie pozytywnie choćby z tego względu, że tu żeby coś zobaczyć nie trzeba było tak dużo chodzić. Osobiście najbardziej
+      wbiły mi się w pamięć biegowe poranki wieńczone kąpielami w morzu. Nigdy wcześniej nie zdarzyło mi się
+      wracać po biganiu tak wypoczętym jak tutaj. Wszystko jadnak co przyjemne dosyć szybko się kończy dlatego po tygodniu spędzonym
+      głównie w Malgrat de Mar ndszedł czasby wyruszyć w podróż powrotną.</p>
+
+      
+      <b class="link_p"><a href="Francja.html"> Przejdź do opisu Francja. </a></b>
+
+    <ul class="gallery">
+      <a href="Images/IMG_28.jpg" data-lightbox="models" data-title="IMG_28">
+        <li class="thumbnail"><img src="Images/IMG_28.jpg"></li>
+    </a>
+      <a href="Images/IMG_29.jpg" data-lightbox="models" data-title="IMG_29">
+        <li class="thumbnail"><img src="Images/IMG_29.jpg"></li>
+    </a>
+      <a href="Images/IMG_30.jpg" data-lightbox="models" data-title="IMG_30">
+        <li class="thumbnail"><img src="Images/IMG_30.jpg"></li>
+    </a>
+      <a href="Images/IMG_31.jpg" data-lightbox="models" data-title="IMG_31">
+        <li class="thumbnail"><img src="Images/IMG_31.jpg"></li>
+    </a>
+      <a href="Images/IMG_32.jpg" data-lightbox="models" data-title="IMG_32">
+        <li class="thumbnail"><img src="Images/IMG_32.jpg"></li>
+    </a>
+      <a href="Images/IMG_33.jpg" data-lightbox="models" data-title="IMG_33">
+        <li class="thumbnail"><img src="Images/IMG_33.jpg"></li>
+    </a>
+      <a href="Images/IMG_34.jpg" data-lightbox="models" data-title="IMG_34">
+        <li class="thumbnail"><img src="Images/IMG_34.jpg"></li>
+    </a>
+      <a href="Images/IMG_35.jpg" data-lightbox="models" data-title="IMG_35">
+        <li class="thumbnail"><img src="Images/IMG_35.jpg"></li>
+    </a>
+      <a href="Images/IMG_36.jpg" data-lightbox="models" data-title="IMG_36">
+        <li class="thumbnail"><img src="Images/IMG_36.jpg"></li>
+    </a>
+    </ul>
+
+
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="index1.html">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="index2.html">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#">
+    </map>
+
+  </article>
+</section>
+<script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>
